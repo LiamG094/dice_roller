@@ -91,3 +91,8 @@ html, body {
     width: 25%;
 }
 
+#results-log > #history-list {
+    border: 10px solid red;
+    border-left:0px; border-right: 0px;
+}
+
