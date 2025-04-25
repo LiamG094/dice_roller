@@ -1,0 +1,93 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* container for entire site*/
+  #app {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  
+/*overall title container*/
+#title-container {
+    border: 10px solid red;
+    border-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/*flex box for the remaining elements*/
+#content-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    border: 10px solid red;
+    display:flex;
+    flex-direction:row;
+}
+
+#content-container > * {
+    border: 5px solid red;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0; 
+}
+
+/* ----------------- LEFT SIDE BAR ------------------ */
+#dice-bar {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    width: 25%;
+}
+
+#dice-bar > .dice-button {
+    margin: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+    height: 60px;
+    width: 120px;
+    justify-content: center;
+    align-items: center; 
+    display: flex; 
+    border: 3px solid red;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+.dice-button:hover {
+    background-color: darkgrey;
+}
+
+/* ------------------CENTRE SECTION -------------*/
+#main-content {
+    align-items: center;
+    width: 50%;
+    padding: 10% 10%;
+}
+
+#dice-image {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* ------------------ RIGHT SIDE BAR ------------------*/
+#results-log {
+
+    width: 25%;
+}
+
