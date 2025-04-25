@@ -1,0 +1,38 @@
+<html>
+    <head> 
+        <title>Dice Roller</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div app>
+        <div id="title-container">
+            <!--- self explanatory it is what it is!-->
+            <h1>LG DiceCo</h1>
+    </div>
+    <div id="content-container">
+        <div id="dice-bar">
+            <!---This is a bar that allows you to select the dice that you are using -->
+            <button class="dice-button" data-dice="4">d4</button>
+            <button class="dice-button" data-dice="6">d6</button>
+            <button class="dice-button" data-dice="8">d8</button>
+            <button class="dice-button" data-dice="10">d10</button>
+            <button class="dice-button" data-dice="12">d12</button>
+            <button class="dice-button" data-dice="20">d20</button>
+        </div>
+        <div id="main-content">
+                <h2>Click to roll!</h2>
+                <img id="dice-image" src="D20.png" alt="Roll Dice">
+        </div>
+        <div id="results-log">
+            <!---this section is to hold the results history that can be referred to later on-->
+            <h2>Roll History</h2>
+            <ul id="history-list">
+            </ul>
+
+        </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+
+</html>
